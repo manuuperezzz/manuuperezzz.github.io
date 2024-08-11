@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manuela Perez</title>
+    <link rel="stylesheet" href="styles.css">
+   <style> h1 {
+        font-size: 3rem; 
+    }
+    .contenido {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .contenido img { 
+        max-width: 300px;
+        height: auto;
+    
+    }
+    .cuadro-texto {
+        background-color: beige;
+            color: black; 
+            border: 2px solid darkblue; 
+            padding: 10px; 
+            border-radius: 5px; 
+            font-size: 16px; 
+            width: 100%; 
+            height: 100px;
+            resize: vertical;
+            box-sizing: border-box; 
+            margin-bottom: 10px; 
+    }
+    body {
+            background-color: rgb(87, 87, 190) !important;
+            color: antiquewhite;
+            margin: 0; /* Elimina el margen por defecto del body */
+            padding: 0; /* Elimina el relleno por defecto del body */
+        }
+
+</style>
+</head>
+<body>
+   <div class="contenido">
+    <img src="imagen.webp" alt="imagen programación" width="300" height="200">
+    <h1>¡Hola, soy Manuela Perez!</h1>
+    <img class="imagen" src="IMG_1745.PNG" alt="mi foto">
+</div>
+<h2>¡Bienvenido!</h2>
+
+
+<textarea class="cuadro-texto" placeholder="Soy una estudiante de Jóvenes a Programar que está incursionando en las ciencias de la tecnología. 
+Siempre me llamaron la atención, pero nunca antes me había animado a hacer un curso que me formara profesionalmente para este ambiente.
+Estoy cursando el la fase 2 y semana a semana sigo aprendiendo distintos conocimientos.
+Si puedo ayudarte en algo, no dudes en contactarme."></textarea>
+
+<section id="contacto">
+    <h2>Contacto</h2>
+    <p>Puedes contactarme a través de mi perfil de LinkedIn:</p>
+    <a id="linkedin" href="https://www.linkedin.com/in/manuela-pérez-4bb1b110b" target="_blank">Mi LinkedIn</a>
+    <p> También puedes dejarme tus datos y consulta debajo y con gusto me contactaré contigo: </p>
+    <form action="Contacto" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+    
+</section>
+</body>
+</html>
